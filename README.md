@@ -72,6 +72,10 @@ See [`examples`](examples) folder for more detail examples.
 * `reurl.init(AccessToken)` - Initialize AccessToken.
 * `reurl.short(longUrl)` - Convert a long url to short url.
 
+### `Cutt.ly`
+[Cutt.ly Official API docs](https://cutt.ly/api-documentation/cuttly-links-api)
+* `cuttly.init(AccessToken)` - Initialize AccessToken.
+* `cuttly.short(longUrl)` - Convert a long url to short url.
 
 ### `Pixnet0rz.tw`
 * `pixnet0rz.short(longUrl)` - Convert a long url to short url.
