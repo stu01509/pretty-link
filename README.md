@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/dm/prettylink)](https://www.npmjs.com/package/prettylink)
 [![Node version](https://img.shields.io/badge/node.js->=_8.0-green.svg)](https://nodejs.org/download/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/stu01509/pretty-link.svg?branch=master)](https://travis-ci.org/stu01509/short-link)
+[![Build Status](https://travis-ci.org/stu01509/pretty-link.svg?branch=master)](https://travis-ci.org/stu01509/pretty-link)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 ## Installation
@@ -23,7 +23,7 @@ Pretty-Link this module provides five URL shorten service, such as [Bitly](https
 
 For more information on the Token applicant or API request and responses please checkout [API Info](#API-Info) or visit their official guide.
 
-```javascript=
+```js=
 const prettylink = require('prettylink');
 
 // Init Access Token in constructor 
