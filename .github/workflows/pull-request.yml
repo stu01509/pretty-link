@@ -1,0 +1,39 @@
+name: Pull Request - Test
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+env:
+  BitlyAccessToken: ${{ secrets.BitlyAccessToken }}
+  PicseeAccessToken: ${{ secrets.PicseeAccessToken }}
+  ReurlAccessToken: ${{ secrets.ReurlAccessToken }}
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Create env file
+      run: |
+        touch .env
+        echo BitlyAccessToken=${{ env.BitlyAccessToken }} >> .env
+        echo PicseeAccessToken=${{ env.PicseeAccessToken }} >> .env
+        echo ReurlAccessToken=${{ secrets.ReurlAccessToken }} >> .env
+        cat .env
+        npm install
+        npm test
