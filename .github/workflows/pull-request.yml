@@ -29,13 +29,3 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm test
-
-    # - name: Create env file
-    #   run: |
-    #     touch .env
-    #     echo BitlyAccessToken=${{ env.BitlyAccessToken }} >> .env
-    #     echo PicseeAccessToken=${{ env.PicseeAccessToken }} >> .env
-    #     echo ReurlAccessToken=${{ secrets.ReurlAccessToken }} >> .env
-    #     cat .env
-    #     npm install
-    #     npm test
