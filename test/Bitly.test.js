@@ -5,6 +5,12 @@ const bitly = new shortLink.Bitly();
 
 describe('# Bitly Test', () => {
   it('Init bitly access token.', (done) => {
+
+    console.log('=== Token ===');
+    console.log(process.env.BitlyAccessToken);
+    console.log(process.env.ReurlAccessToken);
+    console.log(process.env.PicseeAccessToken);
+
     bitly.init('testaccesstoken');
     bitly.accessToken.length.should.be.above(0);
     bitly.accessToken.should.be.not.empty();

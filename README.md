@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/dm/prettylink)](https://www.npmjs.com/package/prettylink)
 [![Node version](https://img.shields.io/badge/node.js->=_8.0-green.svg)](https://nodejs.org/download/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/stu01509/pretty-link.svg?branch=master)](https://travis-ci.org/stu01509/pretty-link)
+![Test Status](https://github.com/stu01509/pretty-link/actions/workflows/pull-request.yml/badge.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 ## Installation
